@@ -1,3 +1,12 @@
 datasets
 .ipynb_checkpoints
 .DS_Store
+yolo/.ipynb_checkpoints
+yolo/checkpoint*
+yolo/newData
+yolo/logs
+yolo/example*
+yolo/yolov3.tf*
+yolo/yolov3.weights
+yolo/yolov3_tiny.tf*
+yolo/yolov3-tiny.weights
