@@ -10,3 +10,4 @@ yolo/yolov3.tf*
 yolo/yolov3.weights
 yolo/yolov3_tiny.tf*
 yolo/yolov3-tiny.weights
+yolo/yoloTiny.tflite
