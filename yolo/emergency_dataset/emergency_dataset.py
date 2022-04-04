@@ -61,9 +61,9 @@ class EmergencyDataset(tfds.core.GeneratorBasedBuilder):
     # TODO(emergency_dataset): Yields (key, example) tuples from the dataset
     
     if split == "train":
-        _range = range(940)
+        _range = range(3,1330)
     else:
-        _range = range(940, 945)
+        _range = range(2)
     
     for i in _range:
         

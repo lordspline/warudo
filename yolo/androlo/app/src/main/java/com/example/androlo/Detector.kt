@@ -48,6 +48,8 @@ class Detector : AppCompatActivity(), ImageAnalysis.Analyzer {
         _paint.color = Color.RED
         _paint.style = Paint.Style.STROKE
         _paint.strokeWidth = 3f
+        _paint.textSize = 50f
+        _paint.textAlign = Paint.Align.LEFT
         surfaceView.setZOrderOnTop(true)
         surfaceView.holder.setFormat(PixelFormat.TRANSPARENT)
     }
@@ -145,6 +147,8 @@ class Detector : AppCompatActivity(), ImageAnalysis.Analyzer {
         p.lineTo(xmin, ymax)
         p.lineTo(xmin, ymin)
         canvas.drawPath(p, _paint)
+        val sc = "%.2f".format(score)
+        canvas.drawText(sc, xmin, ymin, _paint)
     }
 
     private external fun initDetector(assetManager: AssetManager?): Long
